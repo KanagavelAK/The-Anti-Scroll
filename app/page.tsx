@@ -12,10 +12,11 @@ export default function Home() {
     setStatusMessage("");
 
     // Keeping the request simple and direct
-    const response = await fetch("http://localhost:5678/webhook/9f5fa853-1174-4d1e-ad7f-7fb173ab5665", {
+    const response = await fetch("https://amendment-zebra-skewer.ngrok-free.dev/webhook/9f5fa853-1174-4d1e-ad7f-7fb173ab5665", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
+        "ngrok-skip-browser-warning": "true"
       },
       body: JSON.stringify({ article_count: articleCount }),
     });
