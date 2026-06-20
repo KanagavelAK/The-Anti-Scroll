@@ -23,7 +23,7 @@ export default function Home() {
     if (response.ok) {
       setStatusMessage("✅ Success! The bot is compiling your briefing on Discord.");
     } else {
-      setStatusMessage(`❌ Error: Status code ${response.statusCode}`);
+      setStatusMessage(`❌ Error: Status code ${response.status}`);
     }
     
     setIsLoading(false);
