@@ -12,7 +12,7 @@ export default function Home() {
     setStatusMessage("");
 
     // Keeping the request simple and direct
-    const response = await fetch("YOUR_N8N_WEBHOOK_URL_HERE", {
+    const response = await fetch("http://localhost:5678/webhook/9f5fa853-1174-4d1e-ad7f-7fb173ab5665", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
